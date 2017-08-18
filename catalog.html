@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+      <header class="main-header">
+          <nav class="main-navigation">
+              <a class="main-header-logo" href="index.html">
+                <img src="img/index-logo.svg" width="140" height="60" alt="Логотип Нердс">
+              </a>
+                <ul class="site-navigation">
+                    <li><a href="#dfdf">Студия</a></li>
+                    <li><a href="#dfdf">Клиенты</a></li>
+                    <li class="site-navigation-current"><a href="#dfdf">Магазин</a></li>
+                    <li><a href="#dfdf">Контакты</a></li>
+                </ul>
+                <div class="basket-navigation">
+                    <a class="basket">Корзина</a>
+                </div>
+              
+              <h1>Магазин готовых шаблонов</h1>
+
+            </nav>
+      </header>
+      
+<!--      Main       -->
+      
+      <main class="cintainer">
+        
+          <section class="filters-products">
+              <h2 class="visually-hidden">Фильтр товаров</h2>
+              <article class="price">
+                  <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                      
+                    <fieldset>
+                      <legend>Стоимость:</legend>
+                      <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale"> <!-- Дорожка-->
+                                <div class="bar"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div> <!-- левый ползунок-->
+                            <div class="toggle toggle-max"></div> <!-- правый ползунок-->
+                        </div>
+                        <div class="price-control">
+                            <label class="min-price">ОТ<input name="min-price" type="text" value="0">
+                            </label>
+                            <label class="max-price">ДО<input name="max-price" type="text" value="15000">
+                            </label>
+                        </div>
+                    </div>
+                  </fieldset>
+                      
+                    <fieldset>
+                        <legend>Сетка:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type-site" value="adaptiv">
+                                Адаптивная
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type-site" value="fixed">
+                                Фиксировнная
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="type-site" value="gum">
+                                Резиновая
+                            </li>
+                        </ul>
+                    </fieldset>
+                      
+                    <fieldset>
+                        <legend>Особенности:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-1" checked>
+                                Слайдер
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-2" checked>
+                                Блок преимуществ
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-3" checked>
+                                Новости
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-4" checked>
+                                Галерея
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features-5" checked>
+                                Корзина
+                            </li>
+                        </ul>
+                    </fieldset>
+                    
+                    <button type="submit" class="filter-button button">Показать</button>
+                      
+                  </form>   
+              </article>
+            </section>
+				
+            <section class="catalog">
+                <h2 class="visually-hidden">Список шаблонов</h2>
+                <div class="sort-name">
+                    <b class="sort-text">Сортировать:</b>
+                </div>
+                <div class="sort-option">
+                    <ul>
+                        <li class="sort-active">
+                            <a href="#">ПО ЦЕНЕ</a>
+                        </li>
+                        <li>
+                            <a href="#">ПО ТИПУ</a>
+                        </li>
+                        <li>
+                            <a href="#">ПО ФУНКЦИОНАЛУ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sort-icon">
+                    <a class="arrow arrow-up arrow-active" href="#">
+                        ::before
+                        "по возрастанию"
+                    </a>
+                    <a class="arrow arrow-down" href="#">
+                        ::before
+                        "по убыванию"
+                    </a>
+                </div>
+                
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        
+                    </li>
+                    <li class="catalog-item">
+                       
+                    </li>
+                    <li class="catalog-item">
+                       
+                    </li>
+                    <li class="catalog-item">
+                       
+                    </li>
+                    <li class="catalog-item">
+                       
+                    </li>
+                    <li class="catalog-item">
+                       
+                    </li>
+                </ul>
+                <ul class="pagination-list">
+                    <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                    <li class="pagination-item"><a href="#">2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                    <li class="pagination-item"><a href="#">4</a></li>
+                </ul>
+        
+            </section>
+
+      </main>
+      
+       <!-- footer -->
+      
+       <footer class="main-footer">
+           
+           <!-- Map -->
+    
+    <article class="map">
+        <div class="window-adress">
+                <p class="window-adress-h1"><strong>NЁRDS</strong> DESIGN STUDIO</p>
+                <p class="window-adress-p">350000, Краснодар,<br>
+                ул. Головатого, 100</p>
+                <p class="window-adress-p">тел. +7 (861) 275-75-75</p>
+                <a class="btn brn-write" href="#">Напишите нам</a>
+        </div>
+    </article>
+           
+           <div class="footer-social">
+                <ul>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+            </div>
+           
+           <article class="footer-slogan">
+                <b class="mid-text">Давайте дружить, это выгодно!</b>
+                <p>Скижка 10% для друзей из социальных сетей.</p>
+           </article>
+      </footer>
+    </body>
+</html>
+      
