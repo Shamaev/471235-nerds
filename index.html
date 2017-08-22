@@ -14,7 +14,7 @@
           <ul class="site-navigation">
             <li><a href="#dfdf">Студия</a></li>
             <li><a href="#dfdf">Клиенты</a></li>
-            <li><a href="#dfdf">Магазин</a></li>
+            <li><a href="catalog.html" >Магазин</a></li>
             <li><a href="#dfdf">Контакты</a></li>
           </ul>
           <ul class="basket">
@@ -95,13 +95,13 @@
             <h2 class="visually-hidden">О компании</h2>
             <h3>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3> 
               <ul class="list-orders">
-                <li class="order-1">
+                <li class="order">
                   Веб-сайтов любой сложности
                 </li>
-                <li class="order-2">
+                <li class="order">
                   Мобильных приложений для iOS и Android
                 </li>
-                <li class="order-3">
+                <li class="order">
                   Слайдшоу и видео для корпоративных презентаций
                 </li>
               </ul>
@@ -129,10 +129,12 @@
         </div>
       </section>
       <section class="partners">
-        <a href="http://htmlacademy.ru"><img src="images/htmlacademy.png" alt="htmlacademy.ru"></a>
-        <a href="http://barbershop.websciurus.com"><img src="images/logo-barbershop.png" alt="barbershop.websciurus.com"></a>
-        <a href="http://pink.ru"><img src="images/logo-pink.png" alt="pink.ru"></a>
-        <a href="http://mishka.websciurus.com"><img src="images/logo-mishka.png" alt="mishka.websciurus.com"></a>
+        <ul class="partners-list">
+          <li class="partners"><a href="http://htmlacademy.ru"><img src="images/htmlacademy.png" alt="htmlacademy.ru"></a></li>
+          <li class="partners"><a href="http://barbershop.websciurus.com"><img src="images/logo-barbershop.png" alt="barbershop.websciurus.com"></a></li>
+          <li class="partners"><a href="http://pink.ru"><img src="images/logo-pink.png" alt="pink.ru"></a></li>
+          <li class="partners"><a href="http://mishka.websciurus.com"><img src="images/logo-mishka.png" alt="mishka.websciurus.com"></a></li>
+        </ul>
       </section>
     </main>
       
@@ -140,42 +142,38 @@
       
     <footer class="main-footer">
            <!-- Map -->
-      <article class="map">
-        <div class="window-adress">
-          <p class="window-adress-h1"><strong>NЁRDS</strong> DESIGN STUDIO</p>
-          <p class="window-adress-p">350000, Краснодар,<br>ул. Головатого, 100</p>
-          <p class="window-adress-p">тел. +7 (861) 275-75-75</p>
+      <section class="lokation">
+        <h2 class="visually-hidden">Карта</h2>
+        <article class="contacts">
+          <p class="contacts-text"><b>NЁRDS</b> DESIGN STUDIO 350000, Краснодар,<br>ул. Головатого, 100 тел. +7 (861) 275-75-75</p>
           <a class="btn brn-write" href="#">Напишите нам</a>
-        </div>
-      </article>    
-      <div class="footer-social">
+        </article>
+      </section>    
+      <section class="footer-social">
         <ul>
           <li><a class="social social-vk" href="#">Вконтакте</a></li>
           <li><a class="social social-fb" href="#">Фейсбук</a></li>
           <li><a class="social social-in" href="#">Инстаграм</a></li>
         </ul>
-      </div> 
-      <article class="footer-slogan">
-        <b class="mid-text">Давайте дружить, это выгодно!</b>
-        <p>Скижка 10% для друзей из социальных сетей.</p>
-      </article>
+      </section> 
+      <p><strong class="mid-text">Давайте дружить, это выгодно!</strong> Скижка 10% для друзей из социальных сетей.</p>
     </footer>
       
 <!--      Попап    -->
       
     <section class="modal modal-email">
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label>Ваше имя:<br> 
+        <label for="form-name">Ваше имя: 
           <input type="text" name="name" id="form-name" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
-        </label><br>
-        <label>Ваш e-mail:<br> 
+        </label>
+        <label for="form-email">Ваш e-mail:
           <input type="text" name="email" id="form-email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
-        </label><br>
-        <label>Текст письма:<br> 
+        </label>
+        <label for="form-text">Текст письма:
           <textarea type="text" name="info" id="form-text" rows="3" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
-        </label><br>  
+        </label> 
         <input type="submit" value="Отправить">
-        <a class="bth back" href="#">Отмена</a>
+        <button type="button" value="Закрыть">Закрыть</button>
       </form>
     </section> 
   </body>
