@@ -27,10 +27,8 @@
       <main class="cintainer">
           <section class="filters-products">
               <h2 class="visually-hidden">Фильтр товаров</h2>
-              <article class="price">
-                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                      
-                  <fieldset>
+              <form class="filter" method="get" action="https://echo.htmlacademy.ru">  
+                <fieldset>
                       <legend>Стоимость:</legend>
                       <div class="range-filter">
                         <div class="range-controls">
@@ -48,7 +46,7 @@
                         </div>
                     </div>
                   </fieldset>
-                  <fieldset>
+                <fieldset>
                         <legend>Сетка:</legend>
                         <ul>
                             <li class="filter-option">
@@ -65,7 +63,7 @@
                             </li>
                         </ul>
                     </fieldset> 
-                  <fieldset>
+                <fieldset>
                         <legend>Особенности:</legend>
                         <ul>
                             <li class="filter-option">
@@ -90,18 +88,16 @@
                             </li>
                         </ul>
                     </fieldset>
-                    
-                  <button type="submit" class="filter-button button">Показать</button>   
-                </form>   
-              </article>
+                <button type="submit" class="filter-button button">Показать</button>   
+              </form>   
             </section>
 				
             <section class="catalog">
-                <h2 class="visually-hidden">Список шаблонов</h2>
-                <div class="sort-name">
+              <header class="catalog-header">
+                <h2 class="visually-hidden">Список шаблонов</h2>                
+                <div class="title-catalig">
                     <b class="sort-text">Сортировать:</b>
-                </div>
-                <div class="sort-option">
+                  <div class="sort-option">
                     <ul>
                         <li class="sort-active">
                             <a href="#">ПО ЦЕНЕ</a>
@@ -113,37 +109,45 @@
                             <a href="#">ПО ФУНКЦИОНАЛУ</a>
                         </li>
                     </ul>
+                  </div>
+                  <div class="sort-icon">
+                    <ul class="icon-decoration">  
+                      <li class="icon-1"><a class="arrow arrow-up arrow-active" href="#"></a>
+                        Вниз
+                      </li>
+                      <li class="icon-2"><a class="arrow arrow-down" href="#"></a>
+                        Вверх
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="sort-icon">
-                    <a class="arrow arrow-up arrow-active" href="#">
-                        ::before
-                        "по возрастанию"
-                    </a>
-                    <a class="arrow arrow-down" href="#">
-                        ::before
-                        "по убыванию"
-                    </a>
-                </div>
+              </header>
                 
                 <ul class="catalog-list">
-                    <li class="catalog-item">
+                  <li class="catalog-item">
+                    <h3>AVIATOR</h3>
                         
-                    </li>
-                    <li class="catalog-item">
+                  </li>
+                  <li class="catalog-item">
+                    <h3>SUNSET</h3>
                        
-                    </li>
-                    <li class="catalog-item">
+                  </li>
+                  <li class="catalog-item">
+                    <h3>FORTE</h3>
                        
-                    </li>
-                    <li class="catalog-item">
+                  </li>
+                  <li class="catalog-item">
+                    <h3>MARQUEE</h3>
                        
-                    </li>
-                    <li class="catalog-item">
+                  </li>
+                  <li class="catalog-item">
+                    <h3>AVENUE</h3>
                        
-                    </li>
-                    <li class="catalog-item">
+                  </li>
+                  <li class="catalog-item">
+                    <h3>DOVETAIL</h3>
                        
-                    </li>
+                  </li> 
                 </ul>
                 <ul class="pagination-list">
                     <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
@@ -151,7 +155,6 @@
                     <li class="pagination-item"><a href="#">3</a></li>
                     <li class="pagination-item"><a href="#">4</a></li>
                 </ul>
-        
             </section>
 
       </main>
@@ -186,5 +189,4 @@
         </article>
       </footer>
     </body>
-</html>
-      
+</html>     
