@@ -4,9 +4,166 @@ body {
   padding: 0;
 
   font-family: "Roboto", sans-serif; 
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
   color: #000000;
+  text-transform: none;
+    
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin-right: -5px;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;;
+    color: #000000;
+}
+.btn {
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
   text-transform: uppercase;
+
+  background-color: #000000;
+  border: none;
+}
+
+input {
+  background-color: transparent;
+  border: 2px solid rgba(68, 68, 68, 0.5);
+}
+
+input:focus {
+  border-color: rgb(68, 68, 68);
+}
+
+textarea {
+  background-color: transparent;
+  border: 2px solid rgba(68, 68, 68, 0.5);
+}
+
+textarea:focus {
+  border-color: rgb(68, 68, 68);
+}
+
+.main-navigation {
+  background-color: rgb(238, 238, 238);
+}
+
+.site-navigation li, 
+.basket {
+    color: #000000;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.slider-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: bold;
+} 
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about-slider {
+    width: 460px;
+    height: auto;
+}
+
+/*
+.bth {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+} Не работает!!!
+*/
+
+.site-navigation a:link {
+    color: black;
+}
+
+.site-navigation a:hover,
+.basket a:hover {
+    color: rgb(251, 86, 90);
+}
+
+.site-navigation a:active
+.basket a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style: none;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    
+}
+
+.slogan-text {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.about-company h3,
+.how h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.number td {
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.continent {
+    font-size: 24px;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+.level td {
+     font-size: 16px;
+     line-height: 24px;
+}
+
+.contacts-text b{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.contacts p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
 }
