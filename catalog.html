@@ -43,7 +43,6 @@
           <section class="filters-products">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-              <form action="form.php" method="GET">
                 <div class="range-filter">
                   <b class="title-filter-1">Стоимость:</b>
                   <div class="range-controls">
@@ -110,8 +109,7 @@
                     </li>
                   </ul>
                 </div>
-                <button class="show-filter" type="submit" class="filter-button button" method="get">Показать</button>
-              </form>
+                <button class="show-filter button" type="submit" method="get">Показать</button>
             </form> 
           </section>
           <section class="catalog">
@@ -136,12 +134,12 @@
                     <ul class="icon-decoration">  
                       <li class="icon-1">
                         <a class="arrow arrow-up arrow-active" href="#">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path id="arrow" fill="#231f20" d="M5.5 10L0 0h11"/></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path id="arrow-1" fill="#231f20" d="M5.5 10L0 0h11"/></svg>
                         </a>
                       </li>
                       <li class="icon-2">
                         <a class="arrow arrow-down" href="#">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path id="arrow" fill="#ededed" d="M5.5 0L0 10h11z"/></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path id="arrow-1" fill="#ededed" d="M5.5 0L0 10h11z"/></svg>
                         </a>
                       </li>
                     </ul>
@@ -160,7 +158,7 @@
                     <div class="background-sedona">
                       <img src="img/img-sedona.jpg" width="360" height="540" alt="Скрин товара">
                       <div class="window-go">
-                        <div class="windows-go-go" align="center">
+                        <div class="windows-go-go">
                           <a href="#"><h3>SEDONA</h3></a>
                           <p>Интернет-магазин с личным кабинетом</p>
                           <a class="price" href="#">9 900 РУБ.</a>
@@ -178,7 +176,7 @@
                     <div class="background-pink">
                       <img src="img/img-pink.jpg" width="360" height="540" alt="Скрин товара">
                       <div class="window-go">
-                        <div class="windows-go-go" align="center">
+                        <div class="windows-go-go">
                           <a href="#"><h3>PINK</h3></a>
                           <p>Сайт-визитка с личным кабинетом</p>
                           <a class="price" href="#">9 900 РУБ.</a>
@@ -195,7 +193,7 @@
                     </div>
                     <img src="img/img-barbershop.jpg" width="360" height="540" alt="Скрин товара">
                     <div class="window-go">
-                      <div class="windows-go-go" align="center">
+                      <div class="windows-go-go">
                         <a href="#"><h3>BARBERSHOP</h3></a>
                         <p>Интернет-магазин с личным кабинетом</p>
                         <a class="price" href="#">9 900 РУБ.</a>
@@ -211,7 +209,7 @@
                     </div>
                     <img src="img/img-mishka.jpg" width="360" height="540" alt="Скрин товара">
                     <div class="window-go">
-                      <div class="windows-go-go" align="center">
+                      <div class="windows-go-go">
                         <a href="#"><h3>MISHKA</h3></a>
                         <p>Интернет-магазин с личным кабинетом</p>
                         <a class="price" href="#">9 900 РУБ.</a>
@@ -227,7 +225,7 @@
                     </div>
                     <img src="img/img-aplus.jpg" width="360" height="540" alt="Скрин товара">
                     <div class="window-go">
-                      <div class="windows-go-go" align="center">
+                      <div class="windows-go-go">
                         <a href="#"><h3>APLUS</h3></a>
                         <p>Интернет-магазин с личным кабинетом</p>
                         <a class="price" href="#">9 900 РУБ.</a>
@@ -243,7 +241,7 @@
                     </div>
                     <img src="img/img-kvast.jpg" width="360" height="540" alt="Скрин товара">
                     <div class="window-go">
-                      <div class="windows-go-go" align="center">
+                      <div class="windows-go-go">
                         <a href="#"><h3>KVAST</h3></a>
                         <p>Интернет-магазин с личным кабинетом</p>
                         <a class="price" href="#">9 900 РУБ.</a>
@@ -318,7 +316,7 @@
           </p>
           <p class="appointment-item">
             <label for="form-text">Текст письма:</label><br>
-            <textarea type="text" name="info" id="form-text" rows="3" placeholder="В свободной форме"></textarea>
+            <textarea name="info" id="form-text" rows="3" placeholder="В свободной форме"></textarea>
           </p>
           <button class="btn button" type="submit">Отправить</button>
           <button class="modal-close" type="button">Закрыть</button>
