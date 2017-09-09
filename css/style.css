@@ -437,7 +437,7 @@ td {
     height: 352px;
 }
 
-.login-form textarea[type="text"],
+.login-form textarea,
 .login-form input[type="text"],
 .login-form input[type="password"] {
     font: inherit;
@@ -457,7 +457,7 @@ td {
     padding-right: 40px;
 }
 
-.login-form textarea[type="text"] {
+.login-form textarea {
     box-sizing: border-box;
     width: 740px;
     height: 118px;
@@ -1079,7 +1079,7 @@ label {
     color: #000000;
 }
 
-.arrow:hover #arrow { 
+.arrow:hover #arrow-1 { 
     fill: #a6a6a6;
 }
 
@@ -1188,6 +1188,7 @@ label {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     width: 200px;
     height: 155px;
     padding: 0px;
