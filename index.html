@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="center-conteiner">
+      <div class="center-container">
         <nav class="main-navigation">
           <div class="main-navigation-wrapper">
             <a class="main-header-logo">
@@ -28,11 +29,12 @@
                       <circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
                     </svg>
                   </div>
-                  <span class="basket-bth" href="#">Корзина</span>
+                  <span class="basket-bth">Корзина</span>
                 </a>
               </li>
             </ul>
           </div>
+        </nav>
           <section class="sliders">
             <h2 class="visually-hidden">Слайдер</h2>
             <div class="slider">
@@ -56,8 +58,10 @@
                 <div class="slide">
                   <div class="slide-text">
                     <div class="slide-title">Дорого, скрупулезно</div>
-                    <p>Математически выверенный дизайн<br>
-  для вашего сайта или мобильного приложения.</p>
+                    <p>
+                      Математически выверенный дизайн<br>
+                      для вашего сайта или мобильного приложения.
+                    </p>
                     <a class="btn btn-about" href="#">Узнать больше</a>
                   </div>
                 </div>
@@ -72,11 +76,10 @@
               </div>
             </div>
           </section>  
-        </nav>
       </div>
     </header>
     <main class="container">
-      <div class="center-conteiner">
+      <div class="center-container">
         <h1 class="visually-hidden">Веб-студия "nёrds"</h1>
         <section class="services">
           <h2 class="visually-hidden">Услуги</h2>
@@ -101,13 +104,12 @@
             </li>
             </ul>
         </section>
-        <span class="bar-element"></span>
+<!--        <span class="bar-element"></span>-->
         <section class="slogan">
           <div class="first-part">
             <b class="slogan-text">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-            <article class="about-company">
-              <h2 class="visually-hidden">О компании</h2>
+            <div class="about-company">
               <h3>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3> 
               <ul class="list-orders">
                 <li class="order">
@@ -120,7 +122,7 @@
                 Слайдшоу и видео для корпоративных презентаций
               </li>
               </ul>
-            </article>
+            </div>
           </div>
           <div class="second-part">
             <div class="since-2004">
@@ -145,7 +147,7 @@
         <section class="partners">
           <ul class="partners-list">
           <li class="partner">
-            <a href="http://htmlacademy.ru"><img src="img/logo-1.png" alt="htmlacademy.ru"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="htmlacademy.ru"></a>
           </li>
           <li class="partner">
             <a href="http://barbershop.websciurus.com">
@@ -167,10 +169,9 @@
       </div>
     </main>
     <footer class="main-footer">
-      <h2 class="visually-hidden">Карта</h2>
-      <div class="map-background">
-        <div class="center-conteiner">
-          <section class="lokation">
+        <section class="location">
+          <div class="center-container">
+            <h2 class="visually-hidden">Карта</h2>
             <div class="block-contacts">
               <div class="contacts">
                 <b>NЁRDS DESIGN STUDIO</b> 
@@ -178,10 +179,8 @@
                 <a class="btn brn-write" href="#">Напишите нам</a>
               </div>
             </div>
-            <div class="marker-map"><img src="img/map-marker.png" width="231" height="190"></div>
-          </section>
-        </div>
-      </div>
+          </div>
+        </section>
       <section class="footer-social">
         <div class="footer-item">
           <ul class="social-item">
@@ -224,27 +223,13 @@
           </p>
           <p class="appointment-item">
             <label for="form-text">Текст письма:</label><br>
-            <textarea type="text" name="info" id="form-text" rows="3" placeholder="В свободной форме"></textarea>
+            <textarea class="textarea-window" type="text" name="info" id="form-text" rows="3" placeholder="В свободной форме"></textarea>
           </p>
           <button class="btn button" type="submit">Отправить</button>
           <button class="modal-close" type="button">Закрыть</button>
         </form>
       </div>
     </section>
-    <script>
-      var link = document.querySelector(".brn-write");
-  
-      var popup = document.querySelector(".modal-email");
-      var close = popup.querySelector(".modal-close");
-  
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        });
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-        });
-   </script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
