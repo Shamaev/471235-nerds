@@ -1083,6 +1083,10 @@ label {
     fill: #a6a6a6;
 }
 
+.arrow:hover #arrow-2 { 
+    fill: #a6a6a6;
+}
+
 .catalog-footer {
     display: flex;
     justify-content: flex-start;
