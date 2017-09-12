@@ -39,11 +39,11 @@
             <h2 class="visually-hidden">Слайдер</h2>
             <div class="slider">
               <div class="slider-controls">
-                <input type="radio" id="btn-1" name="toggle" checked>
-                <input type="radio" id="btn-2" name="toggle">
-                <input type="radio" id="btn-3" name="toggle">
+                <input class="radio" type="radio" id="btn-1" name="toggle" checked>
                 <label for="btn-1"></label>
+                <input class="radio" type="radio" id="btn-2" name="toggle">
                 <label for="btn-2"></label>
+                <input class="radio" type="radio" id="btn-3" name="toggle">
                 <label for="btn-3"></label>
               </div>
               <div class="slides">
@@ -98,13 +98,12 @@
             </li>
               <li class="services-item">
               <img src="img/illustration-3.jpg" width="300" height="146" alt="Картинка ПРЕЗЕНТАЦИИ">
-              <h3>ПРИЛОЖЕНИЯ</h3>
+              <h3>ПРЕЗЕНТАЦИИ</h3>
               <p>Вы даже не подозреваете насколько вы изумительны!</p>
               <span><a class="btn y3-btn" href="#">ЗАКАЗАТЬ</a></span>
             </li>
             </ul>
         </section>
-<!--        <span class="bar-element"></span>-->
         <section class="slogan">
           <div class="first-part">
             <b class="slogan-text">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
@@ -175,7 +174,7 @@
             <div class="block-contacts">
               <div class="contacts">
                 <b>NЁRDS DESIGN STUDIO</b> 
-                <p class="contacts-text">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><br> тел. +7 (861) 275-75-75</p>
+                <p class="contacts-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <span>тел. +7 (862) 275-75-75</span></p>
                 <a class="btn brn-write" href="#">Напишите нам</a>
               </div>
             </div>
@@ -204,7 +203,7 @@
         <div class="footer-slogan">
           <p>
             <strong class="mid-text">Давайте дружить, это выгодно!</strong>
-            <br> Скидка 10% для друзей из социальных сетей.
+            Скидка 10% для друзей из социальных сетей.
           </p>
         </div>
       </section> 
@@ -214,15 +213,15 @@
         <h3>Напишите нам</h3>
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="appointment-item">
-            <label for="form-name">Ваше имя:</label><br>
+            <label for="form-name">Ваше имя:</label>
             <input type="text" name="name" id="form-name" placeholder="Представьтесь, пожалуйста">
           </p>
           <p class="appointment-item">
-            <label for="form-email">Ваш e-mail:</label><br>
+              <label for="form-email">Ваш e-mail:</label>
             <input type="text" name="email" id="form-email" placeholder="Для отправки ответа">
           </p>
           <p class="appointment-item">
-            <label for="form-text">Текст письма:</label><br>
+            <label for="form-text">Текст письма:</label>
             <textarea class="textarea-window" name="info" id="form-text" rows="3" placeholder="В свободной форме"></textarea>
           </p>
           <button class="btn button" type="submit">Отправить</button>
